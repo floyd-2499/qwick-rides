@@ -1,0 +1,48 @@
+@import "../../Layout/Styles/Variables/style";
+
+.contact-container {
+  width: 90%;
+  height: fit-content;
+  min-height: 90vh;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  margin: auto;
+  margin-bottom: 50px;
+
+  h1 {
+    width: 50%;
+      font-size: 68px;
+      font-weight: 700;
+      margin: 10px 0;
+  }
+
+  .address-section {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    margin-top: 50px;
+
+    .container {
+        width: 30%;
+
+        a {
+            width: 100%;
+            text-decoration: none;
+            color: $text-dark-color;
+
+            &:hover {
+                color: $primary-color;
+            }
+
+            svg {
+                margin-left: 10px;
+            }
+        }
+
+    }
+  }
+}

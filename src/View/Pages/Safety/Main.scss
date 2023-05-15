@@ -1,0 +1,105 @@
+@import "../../Layout/Styles/Variables/style";
+
+.safety-container {
+  width: 90%;
+  height: fit-content;
+  margin: 0 auto 200px;
+
+  .hero-section {
+    width: 100%;
+    min-height: 80vh;
+    margin-bottom: 130px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+
+    h1 {
+      width: 50%;
+      font-size: 68px;
+      font-weight: 700;
+      margin: 10px 0;
+    }
+
+    p {
+        width: 50%;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 26px;
+    }
+  }
+
+  .safety-features-container {
+    width: 100%;
+    height: fit-content;
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+
+    h1 {
+        font-size: 32px;
+        margin-bottom: 30px;
+        margin-top: 0;
+      }
+
+      .options-container {
+        width: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+        margin: 30px auto 50px;
+
+        .button {
+            font-size: 20px;
+            font-weight: 700;
+            margin: 0 20px;
+            padding: 10px 30px;
+            cursor: pointer;
+  
+            &.active {
+              color: $primary-color;
+              border-bottom: 2px solid $primary-color;
+            }
+          }
+      }
+
+      .features-section {
+        width: 100%;
+        margin: 50px auto;
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+
+        h1 {
+            padding: 0 40px 10px 0;
+            margin-bottom: 20px;
+            font-size: 26px;
+            border-bottom: 2px dotted $dark-color;
+
+        }
+
+        .feature {
+            width: 100%;
+            margin-bottom: 30px;
+            display: flex;
+            align-items: flex-start;
+            justify-content: flex-start;
+            flex-direction: column;
+
+            h2 {
+                font-size: 20px;
+                margin-bottom: 0;
+            }
+
+            p {
+                font-size: 16px;
+                line-height: 24px;
+            }
+        }
+      }
+
+  }
+}

@@ -1,0 +1,38 @@
+@import '../../../View/Layout/Styles/Variables/style';
+
+.full-screen-loader {
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  display: grid;
+  align-items: center;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+
+  .loading-spinner-holder {
+    display: flex;
+    justify-content: center;
+  
+    .spinner-border {
+      margin: 10rem 0;
+      height: 8rem;
+      width: 8rem;
+      border-color: $primary-color;
+      border-width: 10px;
+      border-right-color: transparent;
+    }
+  }
+  
+  @media only screen and (max-width: 768px) {
+    .loading-spinner-holder {
+      .spinner-border {
+        margin: 5rem 0;
+        height: 4rem;
+        width: 4rem;
+        border-width: 7px;
+      }
+    }
+  }
+  
+}

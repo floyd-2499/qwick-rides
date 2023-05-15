@@ -1,0 +1,41 @@
+.full-screen-loader {
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #1e2227;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+.full-screen-loader .loading-spinner-holder {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.full-screen-loader .loading-spinner-holder .spinner-border {
+  margin: 10rem 0;
+  height: 8rem;
+  width: 8rem;
+  border-color: #efd36f;
+  border-width: 10px;
+  border-right-color: transparent;
+}
+
+@media only screen and (max-width: 768px) {
+  .full-screen-loader .loading-spinner-holder .spinner-border {
+    margin: 5rem 0;
+    height: 4rem;
+    width: 4rem;
+    border-width: 7px;
+  }
+}

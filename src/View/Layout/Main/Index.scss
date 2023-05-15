@@ -1,0 +1,27 @@
+@import '../Styles/Variables/style';
+
+.layout-main {
+    width: 100%;
+    min-height: 100vh;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+
+    .header {
+        width: 100%;
+        max-width: 1400px;
+    }
+
+    .main-body {
+        width: 100%;
+        max-width: 1400px;
+        min-height: 90vh;
+    }
+
+    .footer {
+        width: 100%;
+        background-color: $accent-color;
+    }
+}

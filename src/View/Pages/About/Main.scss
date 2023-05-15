@@ -1,0 +1,144 @@
+@import "../../Layout/Styles/Variables/style";
+
+.about-us-container {
+  width: 90%;
+  height: fit-content;
+  margin: auto;
+
+  .hero-section {
+    width: 100%;
+    min-height: 80vh;
+    margin-bottom: 130px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+
+    h1 {
+      width: 50%;
+      margin: 10px 0 20px;
+      font-size: 68px;
+      font-weight: 700;
+    }
+
+    h5 {
+      width: 50%;
+      margin: 0;
+      font-size: 32px;
+      font-weight: 500;
+      line-height: 44px;
+    }
+
+    h6 {
+      width: 50%;
+      margin: 20px 0 10px;
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 30px;
+    }
+  }
+
+  .feature-section {
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+    .card {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      padding: 40px;
+      border-radius: 20px;
+      background-color: $primary-color;
+      color: $text-light-color;
+
+      h1 {
+        margin-bottom: 10px;
+      }
+
+      p {
+        font-size: 20px;
+      }
+    }
+  }
+
+  .info-section {
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    margin: 100px 0;
+
+    p {
+        width: 80%;
+        margin: 20px auto;
+    }
+
+    .founders {
+        margin: 20px 0;
+
+        .details {
+            margin-top: 50px;
+
+            h2 {
+                margin: 0;
+            }
+
+            h3 {
+                margin: 10px 0;
+                font-size: 16px;
+                font-weight: 600;
+            }
+        }
+    }
+
+
+  }
+
+  .careers-section {
+    min-height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 100px;
+
+    .card {
+        width: 40%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        background-color: $primary-color;
+        margin: auto;
+        padding: 90px 0;
+        border-radius: 20px;
+
+        h1 {
+            font-size: 32px;
+            margin: 0;
+            color: $text-light-color;
+        }
+
+        a {
+            margin-top: 30px;
+            text-decoration: none;
+
+            .button {
+                padding: 15px 45px;
+                border-radius: 20px;
+                font-size: 20px;
+                font-weight: 700;
+                color: $primary-color;
+                background-color: $light-bg-color;
+            }
+        }
+
+    }
+  }
+}
